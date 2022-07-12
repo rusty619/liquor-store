@@ -1,4 +1,5 @@
 import React,{useState, useEffect} from "react"
+import BrandContainer from "./BrandContainer"
 
 const Home = () => {
     const [brandData, setBrandData] = useState([])
@@ -15,7 +16,10 @@ const Home = () => {
 
     console.log(brandData)
 
-    return(<div>hi</div>)
+    return(
+    <div>
+        <BrandContainer brandData={brandData}/>
+    </div>)
 }
 
 export default Home
